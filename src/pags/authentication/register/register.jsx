@@ -6,29 +6,8 @@ import KeyIcon from '@mui/icons-material/Key';
 import EmailIcon from '@mui/icons-material/Email';
 import theme from '../../../theme';
 import logos from '../../../assets/img/logo.png';
+import CssTextField from '../../../components/CssTextField';
 
-
-
-const CssTextField = styled(TextField)(({  }) => ({
-    '& .MuiOutlinedInput-root': {
-        '&:hover, & .MuiOutlinedInput-input,': {
-            color: 'white'
-        },
-        '& fieldset': {
-        borderColor: 'white',
-        },
-        '&:hover fieldset': {
-            borderColor: 'white',
-            borderWidth: 4
-        },
-        '&.Mui-focused fieldset': {
-        borderColor: 'white',
-        },
-    },
-    '& .MuiFilledInput-input':{
-        color:'white'
-    }
-}));
 
 const LoginBox = styled(Box)(({}) => ({
     width: '28%', 
@@ -91,7 +70,7 @@ export default function Register() {
                 por favor, realize o login clicando no botão abaixo.
             </Typography>
 
-            <Button variant='outlined' color='secondary' sx={{color: 'white'}}>
+            <Button href='/login' variant='outlined' color='secondary' sx={{color: 'white'}}>
                 Vamos lá
             </Button>
         </LoginBox>
@@ -160,8 +139,8 @@ export default function Register() {
                 Cadastre-se
             </Button>
             
-            <Typography color='white'>
-                Caso ja possua um login, clique <Link sx={{textDecoration: 'none', color: '#231942'}}>aqui.</Link>
+            <Typography align='center' color='white'>
+                Caso ja possua um login, clique <Link href='/login' sx={{textDecoration: 'none', color: '#231942'}}>aqui.</Link>
             </Typography>
 
         </RegisterBox>
