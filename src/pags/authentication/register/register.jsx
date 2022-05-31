@@ -7,6 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import theme from '../../../theme';
 import logos from '../../../assets/img/logo.png';
 import CssTextField from '../../../components/CssTextField';
+import Navigation from '../../../routes';
 
 
 const LoginBox = styled(Box)(({}) => ({
@@ -141,6 +142,7 @@ export default function Register() {
             
             <Typography align='center' color='white'>
                 Caso ja possua um login, clique <Link href='/login' sx={{textDecoration: 'none', color: '#231942'}}>aqui.</Link>
+
             </Typography>
 
         </RegisterBox>
