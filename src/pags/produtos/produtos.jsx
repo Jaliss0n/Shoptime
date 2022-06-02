@@ -45,22 +45,23 @@ export default function Produtos() {
                 height: '100vh',
                 width: '100% - 240',
                 [theme.breakpoints.down('sm')]: {
-                    paddingLeft: '0'
+                    paddingLeft: '0',
+                    height: '130vh'
+
                 }
             }}>
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'center',
                     width: '100%',
-                    marginTop: '15%',
+                    marginTop: '13%',
                     [theme.breakpoints.down('sm')]:{
-                        marginTop:'30%'
+                        marginTop:'30%',
+
                     }
                 }}>
 
-
                     <div style={{ width: '90%', }}>
-                        
                         <TableContainer component={Paper}>
                             <Table sx={{ minWidth: 500 }} aria-label="customized table">
                                 <TableHead>
@@ -120,18 +121,13 @@ export default function Produtos() {
 
                                             </StyledTableCell>
                                         </StyledTableRow>
-
                                     ))}
                                 </TableBody>
                             </Table>
                         </TableContainer>
                     </div>
                 </Box>
-
-
-
             </Box>
-
         </div>
     )
 }

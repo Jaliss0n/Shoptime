@@ -21,7 +21,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import theme from '../../theme'
 import MenuIcon from '@mui/icons-material/Menu';
-
+import '../../components/style.css'
 
 export default function Home(props) {
 
@@ -62,7 +62,7 @@ export default function Home(props) {
             </ListItem>
           </Link>
 
-          <Link color='primary' sx={{ textDecoration: 'none' }} href='/cadastro'>
+          <Link color='primary' sx={{ textDecoration: 'none' }} href='/home/register_products'>
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -193,9 +193,11 @@ export default function Home(props) {
           </ListItemIcon> Add outra Conta
         </MenuItem>
         <MenuItem>
-          <ListItemIcon>
-            <Logout fontSize="small" />
-          </ListItemIcon> Sair
+          <a  href='/'>
+            <ListItemIcon>
+              <Logout fontSize="small" />
+            </ListItemIcon> Sair
+          </a>
         </MenuItem>
       </Menu>
 
