@@ -57,7 +57,7 @@ export default function Home(props) {
                 <ListItemIcon>
                   <ShoppingCartCheckoutIcon color='primary' />
                 </ListItemIcon>
-                <ListItemText primary="Gerenciar Produtos" />
+                <ListItemText primary="Gerenciar Maquinas" />
               </ListItemButton>
             </ListItem>
           </Link>
@@ -68,12 +68,12 @@ export default function Home(props) {
                 <ListItemIcon>
                   <AddCircleIcon color='primary' />
                 </ListItemIcon>
-                <ListItemText primary="Criar Produtos" />
+                <ListItemText primary="Cadastrar Maquina" />
               </ListItemButton>
             </ListItem>
           </Link>
 
-          <Link color='primary' sx={{ textDecoration: 'none' }} href='/cadastro'>
+          <Link color='primary' sx={{ textDecoration: 'none' }} href='/home/manage'>
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
@@ -86,8 +86,8 @@ export default function Home(props) {
 
           <Divider />
 
-          <Link color='primary' sx={{ textDecoration: 'none' }} href='/cadastro'>
-            <ListItem disablePadding>
+          <Link color='primary' sx={{ textDecoration: 'none' }}>
+            <ListItem disablePadding disabled>
               <ListItemButton>
                 <ListItemIcon>
                   <ManageSearchIcon color='primary' />
@@ -119,7 +119,7 @@ export default function Home(props) {
             <MenuIcon />
           </IconButton>
 
-          <a href='/home'>
+          <a href='/home/produtos'>
             <img src={logos} width='200px' />
           </a>
 

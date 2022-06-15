@@ -66,7 +66,7 @@ export default function Login() {
                 variant="outlined"
             />
 
-            <Button href='/home' variant='outlined' color='secondary' sx={{color: 'white'}}>Entrar</Button>
+            <Button href='/home/produtos' variant='outlined' color='secondary' sx={{color: 'white'}}>Entrar</Button>
 
             <Typography align='center' color='white' variant='p'>
                 Caso não possua um cadastro clique <Link href='/' sx={{textDecoration: 'none', color: '#9f86c0'}}>aqui.</Link>
